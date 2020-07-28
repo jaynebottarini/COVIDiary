@@ -10,13 +10,16 @@ import UIKit
 
 class addImageViewController: UIViewController {
 
+    @IBOutlet weak var imageView1: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func addImage(_ sender: UIButton) {
+    }
+    
     /*
     // MARK: - Navigation
 

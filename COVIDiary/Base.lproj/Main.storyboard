@@ -65,12 +65,18 @@
                                 <rect key="frame" x="20" y="690" width="118" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="yellow button background"/>
+                                <connections>
+                                    <action selector="addImage:" destination="B4s-yl-Wr4" eventType="touchUpInside" id="Sob-fC-ANv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="EXv-kb-9zx"/>
                     </view>
                     <navigationItem key="navigationItem" id="B4o-q4-NnF"/>
+                    <connections>
+                        <outlet property="image" destination="3ol-qP-fkl" id="5AX-GL-YTI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NzI-Wo-3PE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
