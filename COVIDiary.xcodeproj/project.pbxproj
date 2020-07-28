@@ -17,6 +17,9 @@
 		8FABF01224D088AF00C5AFD1 /* COVIDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FABF01124D088AF00C5AFD1 /* COVIDiaryTests.swift */; };
 		8FABF01D24D088AF00C5AFD1 /* COVIDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FABF01C24D088AF00C5AFD1 /* COVIDiaryUITests.swift */; };
 		8FABF02B24D091D300C5AFD1 /* addImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FABF02A24D091D300C5AFD1 /* addImageViewController.swift */; };
+		8FABF02D24D0A33E00C5AFD1 /* myMemoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FABF02C24D0A33E00C5AFD1 /* myMemoriesViewController.swift */; };
+		8FABF02F24D0A38A00C5AFD1 /* informationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FABF02E24D0A38A00C5AFD1 /* informationViewController.swift */; };
+		8FABF03124D0A45A00C5AFD1 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FABF03024D0A45A00C5AFD1 /* mapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		8FABF01C24D088AF00C5AFD1 /* COVIDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVIDiaryUITests.swift; sourceTree = "<group>"; };
 		8FABF01E24D088AF00C5AFD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FABF02A24D091D300C5AFD1 /* addImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addImageViewController.swift; sourceTree = "<group>"; };
+		8FABF02C24D0A33E00C5AFD1 /* myMemoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myMemoriesViewController.swift; sourceTree = "<group>"; };
+		8FABF02E24D0A38A00C5AFD1 /* informationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informationViewController.swift; sourceTree = "<group>"; };
+		8FABF03024D0A45A00C5AFD1 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,9 @@
 				8FABEFF924D088AB00C5AFD1 /* SceneDelegate.swift */,
 				8FABEFFB24D088AB00C5AFD1 /* ViewController.swift */,
 				8FABF02A24D091D300C5AFD1 /* addImageViewController.swift */,
+				8FABF02C24D0A33E00C5AFD1 /* myMemoriesViewController.swift */,
+				8FABF02E24D0A38A00C5AFD1 /* informationViewController.swift */,
+				8FABF03024D0A45A00C5AFD1 /* mapViewController.swift */,
 				8FABEFFD24D088AB00C5AFD1 /* Main.storyboard */,
 				8FABF00324D088AF00C5AFD1 /* Assets.xcassets */,
 				8FABF00524D088AF00C5AFD1 /* LaunchScreen.storyboard */,
@@ -268,8 +277,11 @@
 				8FABF00224D088AB00C5AFD1 /* COVIDiary.xcdatamodeld in Sources */,
 				8FABF02B24D091D300C5AFD1 /* addImageViewController.swift in Sources */,
 				8FABEFFC24D088AB00C5AFD1 /* ViewController.swift in Sources */,
+				8FABF02D24D0A33E00C5AFD1 /* myMemoriesViewController.swift in Sources */,
 				8FABEFF824D088AB00C5AFD1 /* AppDelegate.swift in Sources */,
+				8FABF02F24D0A38A00C5AFD1 /* informationViewController.swift in Sources */,
 				8FABEFFA24D088AB00C5AFD1 /* SceneDelegate.swift in Sources */,
+				8FABF03124D0A45A00C5AFD1 /* mapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,22 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="EC3-e5-oPO">
+            <objects>
+                <viewController id="79s-V9-MOi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oqh-wk-jgd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="JpB-aN-PLB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zwr-QF-x4p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2OO-dA-azV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-654" y="134"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="COVIDiary" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,11 +50,25 @@
                                 <rect key="frame" x="21" y="650" width="130" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="map button background"/>
+                                <connections>
+                                    <segue destination="79s-V9-MOi" kind="show" id="13Z-yw-G45"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXN-ga-ggk">
                                 <rect key="frame" x="274" y="656" width="136" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="news background button"/>
+                                <connections>
+                                    <segue destination="83y-Ph-VuV" kind="show" id="TqN-RI-sVT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6u-Xs-Fag">
+                                <rect key="frame" x="48" y="767" width="318" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="my memories button"/>
+                                <connections>
+                                    <segue destination="Mcc-08-kcE" kind="show" id="Gmd-7a-ncv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -48,6 +78,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
+        </scene>
+        <!--Information View Controller-->
+        <scene sceneID="Mtq-hS-SHT">
+            <objects>
+                <viewController id="83y-Ph-VuV" customClass="informationViewController" customModule="COVIDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="inh-jK-zp3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bg7-kw-qCq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dv2-BO-N7m"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2tY-Fn-dBq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000" y="133"/>
+        </scene>
+        <!--My Memories View Controller-->
+        <scene sceneID="pEF-vI-HjE">
+            <objects>
+                <viewController id="Mcc-08-kcE" customClass="myMemoriesViewController" customModule="COVIDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Ug-1b-0UH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vv4-KP-Ins"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sQm-En-shK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rP0-A2-a9v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265" y="824"/>
         </scene>
         <!--Add Image View Controller-->
         <scene sceneID="LId-xf-6HY">
@@ -63,11 +125,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NzI-Wo-3PE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="131"/>
+            <point key="canvasLocation" x="633" y="824"/>
         </scene>
     </scenes>
     <resources>
         <image name="map button background" width="132" height="120"/>
+        <image name="my memories button" width="391" height="97"/>
         <image name="news background button" width="119" height="107"/>
         <image name="yellow button background" width="120" height="104"/>
     </resources>
