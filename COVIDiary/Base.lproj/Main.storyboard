@@ -19,6 +19,9 @@
                                 <rect key="frame" x="148" y="659" width="118" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="yellow button background"/>
+                                <connections>
+                                    <segue destination="B4s-yl-Wr4" kind="show" id="dVa-XG-IQG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="COVIDiary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcW-1x-ZTk">
                                 <rect key="frame" x="20" y="63" width="133" height="45"/>
@@ -37,13 +40,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="news background button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qz-Rb-E5l">
-                                <rect key="frame" x="81" y="767" width="253" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="MEMORIES" image="Screenshot 2020-07-28 at 11.53.30 AM">
-                                    <color key="titleColor" white="0.66000000000000003" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -53,9 +49,24 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
         </scene>
+        <!--Add Image View Controller-->
+        <scene sceneID="LId-xf-6HY">
+            <objects>
+                <viewController id="B4s-yl-Wr4" customClass="addImageViewController" customModule="COVIDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="noY-9V-SH8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="EXv-kb-9zx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="B4o-q4-NnF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NzI-Wo-3PE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="131"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Screenshot 2020-07-28 at 11.53.30 AM" width="508" height="202"/>
         <image name="map button background" width="132" height="120"/>
         <image name="news background button" width="119" height="107"/>
         <image name="yellow button background" width="120" height="104"/>
