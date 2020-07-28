@@ -9,14 +9,31 @@
 import UIKit
 
 class informationViewController: UIViewController {
-
+    @IBOutlet weak var symptomsOutlet: UIButton!
+    
+    @IBOutlet weak var updatesLabel: UILabel!
+    @IBOutlet weak var resourcesOutlet: UIButton!
+    @IBOutlet weak var symptomsLabel: UILabel!
+    
+    @IBOutlet weak var resourcesLabel: UILabel!
+    
     override func viewDidLoad() {
+        updatesLabel.isHidden = true
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func updatesButton(_ sender: Any) {
+        updatesLabel.isHidden = false
+        self.symptomsOutlet.frame.origin.y = self.updatesLabel.frame.origin.y + 50
+        self.resourcesOutlet.frame.origin.y = self.symptomsOutlet.frame.origin.y + 70
+    }
+    
+    @IBAction func symptomsButton(_ sender: Any) {
+        self.resourcesOutlet.frame.origin.y += 150
+    }
+    
+    @IBAction func resourcesButton(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 
