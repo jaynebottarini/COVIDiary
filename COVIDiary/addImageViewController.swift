@@ -35,6 +35,8 @@ class addImageViewController: UIViewController, UINavigationControllerDelegate, 
             {
                 //error message
         }
+        self.dismiss(animated: true, completion: nil)
+        
     } 
     
     
