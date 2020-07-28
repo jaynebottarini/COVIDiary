@@ -8,19 +8,44 @@
 
 import UIKit
 
-class addImageViewController: UIViewController {
-
+class addImageViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+   
     @IBOutlet weak var imageView1: UIImageView!
+    
+    @IBAction func addImage(_ sender: Any) {
+        let image = UIImagePickerController()
+        image.delegate = self
+        
+        image.sourceType = UIImagePickerController.SourceType.photoLibrary
+        
+        image.allowsEditing = false
+        
+        self.present(image,animated: true)
+        {
+            //After is is complete
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+            {
+                imageView1.image = image
+            }
+            else
+            {
+                //error message
+        }
+    } 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func addImage(_ sender: UIButton) {
-    }
-    
-    /*
+   
+        /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

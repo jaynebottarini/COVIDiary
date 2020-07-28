@@ -152,7 +152,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="yellow button background"/>
                                 <connections>
-                                    <action selector="addImage:" destination="B4s-yl-Wr4" eventType="touchUpInside" id="Sob-fC-ANv"/>
+                                    <action selector="addImage:" destination="B4s-yl-Wr4" eventType="touchUpInside" id="OCa-QW-Fu6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -161,7 +161,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="B4o-q4-NnF"/>
                     <connections>
-                        <outlet property="image" destination="3ol-qP-fkl" id="5AX-GL-YTI"/>
+                        <outlet property="imageView1" destination="3ol-qP-fkl" id="IZS-1m-fXi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NzI-Wo-3PE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
