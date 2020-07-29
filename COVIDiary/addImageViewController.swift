@@ -30,7 +30,7 @@ class addImageViewController: UIViewController, UINavigationControllerDelegate, 
         
         self.present(image,animated: true)
         {
-            //After is is complete
+            //After is is complete!!
         }
     }
     
