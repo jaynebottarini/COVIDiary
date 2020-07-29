@@ -23,9 +23,16 @@ class informationViewController: UIViewController {
     }
     
     @IBAction func updatesButton(_ sender: Any) {
-        updatesLabel.isHidden = false
-        self.symptomsOutlet.frame.origin.y = self.updatesLabel.frame.origin.y + 50
-        self.resourcesOutlet.frame.origin.y = self.symptomsOutlet.frame.origin.y + 70
+        UIView.animate(withDuration: 0.75, delay: 0, options: .curveLinear, animations: {
+               // this will change Y position of your imageView center
+               // by 1 every time you press button
+               self.symptomsOutlet.center.y += 150
+           }, completion: nil)
+        UIView.animate(withDuration: 0.75, delay: 0, options: .curveLinear, animations: {
+            // this will change Y position of your imageView center
+            // by 1 every time you press button
+            self.resourcesOutlet.center.y += 160
+        }, completion: nil)
     }
     
     @IBAction func symptomsButton(_ sender: Any) {
