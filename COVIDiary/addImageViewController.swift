@@ -54,7 +54,7 @@ class addImageViewController: UIViewController, UINavigationControllerDelegate, 
 
         // Do any additional setup after loading the view.
     }
-    
+    // test
    
     @IBAction func nameEvent(_ sender: Any) {
         eventTitle.text = changeEvent.text
