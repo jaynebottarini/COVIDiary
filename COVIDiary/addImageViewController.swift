@@ -54,14 +54,20 @@ class addImageViewController: UIViewController, UINavigationControllerDelegate, 
         // Do any additional setup after loading the view.
     }
     
-   /*I forgot we needed buttons haha so this is the code that can go under them
-    eventTitle.text = changeEvent
-    changeEvent.isHidden = true
-    friends.text = changeFriends
-    changeFriends.isHidden = true
-    location.text = changeLocation
-    changeLocation.isHidden = true
-   */
+   
+    @IBAction func nameEvent(_ sender: Any) {
+        eventTitle.text = changeEvent.text
+        changeEvent.isHidden = true
+    }
+    @IBAction func namePeople(_ sender: Any) {
+        friends.text = changeFriends.text
+        changeFriends.isHidden = true
+    }
+    @IBAction func nameLocation(_ sender: Any) {
+        location.text = changeLocation.text
+        changeLocation.isHidden = true
+    }
+    
      
         /*
     // MARK: - Navigation
