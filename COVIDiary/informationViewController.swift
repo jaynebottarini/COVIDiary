@@ -18,7 +18,6 @@ class informationViewController: UIViewController {
     @IBOutlet weak var resourcesLabel: UILabel!
     
     override func viewDidLoad() {
-        updatesLabel.isHidden = true
         super.viewDidLoad()
     }
     
