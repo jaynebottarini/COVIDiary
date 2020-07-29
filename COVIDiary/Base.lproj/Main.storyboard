@@ -96,28 +96,12 @@
                                     <action selector="updatesButton:" destination="83y-Ph-VuV" eventType="touchUpInside" id="EcK-ei-KWF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCP-I3-u2y">
-                                <rect key="frame" x="13" y="151" width="381" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="symptomsButton"/>
-                                <connections>
-                                    <action selector="symptomsButton:" destination="83y-Ph-VuV" eventType="touchUpInside" id="g5s-2m-lYX"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a33-J3-Zff">
                                 <rect key="frame" x="13" y="274" width="381" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="resourcesButton"/>
                                 <connections>
                                     <action selector="resourcesButton:" destination="83y-Ph-VuV" eventType="touchUpInside" id="8c5-0Z-gml"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uu-rd-onn">
-                                <rect key="frame" x="17" y="151" width="381" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="symptomsButton"/>
-                                <connections>
-                                    <action selector="symptomsButton:" destination="83y-Ph-VuV" eventType="touchUpInside" id="mcZ-W5-ywm"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62d-2d-hV6">
@@ -149,6 +133,14 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="hDW-iQ-3ZE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uu-rd-onn">
+                                <rect key="frame" x="13" y="151" width="381" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="symptomsButton"/>
+                                <connections>
+                                    <action selector="symptomsButton:" destination="83y-Ph-VuV" eventType="touchUpInside" id="mcZ-W5-ywm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="bg7-kw-qCq"/>
@@ -164,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tY-Fn-dBq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1000.0000000000001" y="132.58928571428572"/>
+            <point key="canvasLocation" x="1168" y="81"/>
         </scene>
         <!--My Memories View Controller-->
         <scene sceneID="pEF-vI-HjE">
