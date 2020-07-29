@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -245,7 +245,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="B4o-q4-NnF"/>
                     <connections>
+                        <outlet property="changeEvent" destination="z4O-V6-UQl" id="QYH-Sz-rAY"/>
+                        <outlet property="changeFriends" destination="8i0-YG-DtW" id="QNo-gg-4lS"/>
+                        <outlet property="changeLocation" destination="3nI-YM-2xv" id="B0Z-Yn-iTw"/>
+                        <outlet property="eventTitle" destination="80H-oo-W3R" id="rw7-6M-uCc"/>
+                        <outlet property="friends" destination="NL7-8c-IK9" id="PpD-uS-QS2"/>
                         <outlet property="imageView1" destination="3ol-qP-fkl" id="IZS-1m-fXi"/>
+                        <outlet property="location" destination="tAi-kB-VO3" id="UcM-oO-xZW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NzI-Wo-3PE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
