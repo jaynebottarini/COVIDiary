@@ -16,6 +16,9 @@ class addImageViewController: UIViewController, UINavigationControllerDelegate, 
     @IBOutlet weak var changeEvent: UITextField!
     @IBOutlet weak var changeFriends: UITextField!
     @IBOutlet weak var changeLocation: UITextField!
+    @IBOutlet weak var nameEventButton: UIButton!
+    @IBOutlet weak var nameFriendsButton: UIButton!
+    @IBOutlet weak var nameLocationButton: UIButton!
     
     
     @IBOutlet weak var imageView1: UIImageView!
@@ -51,22 +54,28 @@ class addImageViewController: UIViewController, UINavigationControllerDelegate, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
-    // test
-   
+
+    override func viewWillAppear(_ animated: Bool) {
+        nameEventButton.isHidden = false
+        nameFriendsButton.isHidden = false
+        nameLocationButton.isHidden = false
+    }
     @IBAction func nameEvent(_ sender: Any) {
         eventTitle.text = changeEvent.text
         changeEvent.isHidden = true
+        nameEventButton.isHidden = true
     }
     @IBAction func namePeople(_ sender: Any) {
         friends.text = changeFriends.text
         changeFriends.isHidden = true
+        nameFriendsButton.isHidden = true
     }
     @IBAction func nameLocation(_ sender: Any) {
         location.text = changeLocation.text
         changeLocation.isHidden = true
+        nameLocationButton.isHidden = true
     }
     
      

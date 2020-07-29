@@ -7,13 +7,23 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
 class mapViewController: UIViewController {
 
+    @IBOutlet weak var map: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        var location = CLLocationCoordinate2DMake(41.763230, -88.200610)
+        var span = MKCoordinateSpan(latitudeDelta: 0.2,longitudeDelta: 0.2)
+        var region = MKCoordinateRegion(center: location, span: span)
+        map.setRegion(region, animated: true)
+        var annotation = MKPointAnnotation()
+        annotation.coordinate = location
+        annotation.title = "Taco Bell"
+        annotation.subtitle = "Lunch with Friends"
+        map.addAnnotation(annotation)
     }
     
 
