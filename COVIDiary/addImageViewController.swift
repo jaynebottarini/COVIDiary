@@ -10,6 +10,14 @@ import UIKit
 
 class addImageViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
    
+    @IBOutlet weak var eventTitle: UILabel!
+    @IBOutlet weak var friends: UILabel!
+    @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var changeEvent: UITextField!
+    @IBOutlet weak var changeFriends: UITextField!
+    @IBOutlet weak var changeLocation: UITextField!
+    
+    
     @IBOutlet weak var imageView1: UIImageView!
     
     @IBAction func addImage(_ sender: Any) {
@@ -46,7 +54,15 @@ class addImageViewController: UIViewController, UINavigationControllerDelegate, 
         // Do any additional setup after loading the view.
     }
     
-   
+   /*I forgot we needed buttons haha so this is the code that can go under them
+    eventTitle.text = changeEvent
+    changeEvent.isHidden = true
+    friends.text = changeFriends
+    changeFriends.isHidden = true
+    location.text = changeLocation
+    changeLocation.isHidden = true
+   */
+     
         /*
     // MARK: - Navigation
 
