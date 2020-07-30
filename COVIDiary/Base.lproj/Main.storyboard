@@ -471,6 +471,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vs0-QU-hZb">
+                                <rect key="frame" x="164" y="725" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="My Memories"/>
+                                <connections>
+                                    <segue destination="Mcc-08-kcE" kind="show" id="HxL-8y-xNM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="EXv-kb-9zx"/>
@@ -497,6 +505,9 @@
             <point key="canvasLocation" x="630.43478260869574" y="823.66071428571422"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="HxL-8y-xNM"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="CDClogo" width="220" height="166"/>
         <image name="IMG_1234" width="5184" height="3456"/>
