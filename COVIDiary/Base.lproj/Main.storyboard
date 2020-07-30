@@ -390,7 +390,7 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ol-qP-fkl">
-                                <rect key="frame" x="20" y="136" width="374" height="293"/>
+                                <rect key="frame" x="39" y="107" width="335" height="329"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.96647215769999995" blue="0.92828204960000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
