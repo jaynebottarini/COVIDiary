@@ -104,27 +104,6 @@
                                     <action selector="resourcesButton:" destination="83y-Ph-VuV" eventType="touchUpInside" id="8c5-0Z-gml"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62d-2d-hV6">
-                                <rect key="frame" x="186" y="122" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgq-4H-xaO">
-                                <rect key="frame" x="182" y="255" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ok3-h1-R8Q">
-                                <rect key="frame" x="182" y="378" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3I-HW-r35">
                                 <rect key="frame" x="19" y="778" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -141,22 +120,27 @@
                                     <action selector="symptomsButton:" destination="83y-Ph-VuV" eventType="touchUpInside" id="mcZ-W5-ywm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbO-SX-Pf1">
+                                <rect key="frame" x="44" y="144" width="136" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="CDClogo"/>
+                                <connections>
+                                    <action selector="CDCLink:" destination="83y-Ph-VuV" eventType="touchUpInside" id="b0J-54-q0m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="bg7-kw-qCq"/>
                     </view>
                     <navigationItem key="navigationItem" id="dv2-BO-N7m"/>
                     <connections>
-                        <outlet property="resourcesLabel" destination="ok3-h1-R8Q" id="wZC-es-43p"/>
                         <outlet property="resourcesOutlet" destination="a33-J3-Zff" id="odx-GX-kCN"/>
-                        <outlet property="symptomsLabel" destination="cgq-4H-xaO" id="UmO-LQ-8fo"/>
                         <outlet property="symptomsOutlet" destination="6uu-rd-onn" id="rBj-Hg-910"/>
-                        <outlet property="updatesLabel" destination="62d-2d-hV6" id="2Bm-w5-WWM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tY-Fn-dBq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1168" y="81"/>
+            <point key="canvasLocation" x="1166.6666666666667" y="80.357142857142847"/>
         </scene>
         <!--My Memories View Controller-->
         <scene sceneID="pEF-vI-HjE">
@@ -341,6 +325,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CDClogo" width="220" height="166"/>
         <image name="IMG_1234" width="5184" height="3456"/>
         <image name="IMG_2743" width="750" height="1624"/>
         <image name="Screen Shot 2020-07-29 at 10.37.39 AM" width="2802" height="1412"/>

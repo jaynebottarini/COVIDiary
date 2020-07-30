@@ -11,17 +11,13 @@ import UIKit
 class informationViewController: UIViewController {
     @IBOutlet weak var symptomsOutlet: UIButton!
     @IBOutlet weak var resourcesOutlet: UIButton!
-    @IBOutlet weak var symptomsLabel: UILabel!
-    @IBOutlet weak var updatesLabel: UILabel!
-    @IBOutlet weak var resourcesLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        symptomsLabel.isHidden = true
-        updatesLabel.isHidden = true
-        resourcesLabel.isHidden = true
     }
     
+
     @IBAction func updatesButton(_ sender: Any) {
         UIView.animate(withDuration: 0.75, delay: 0, options: .curveLinear, animations: {
                self.symptomsOutlet.center.y += 150
@@ -29,7 +25,6 @@ class informationViewController: UIViewController {
         UIView.animate(withDuration: 0.75, delay: 0, options: .curveLinear, animations: {
             self.resourcesOutlet.center.y += 160
         }, completion: nil)
-        updatesLabel.isHidden = false
     }
     
     @IBAction func symptomsButton(_ sender: Any) {
