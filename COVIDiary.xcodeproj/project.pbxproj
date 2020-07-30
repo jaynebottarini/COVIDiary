@@ -20,6 +20,7 @@
 		8FABF02D24D0A33E00C5AFD1 /* myMemoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FABF02C24D0A33E00C5AFD1 /* myMemoriesViewController.swift */; };
 		8FABF02F24D0A38A00C5AFD1 /* informationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FABF02E24D0A38A00C5AFD1 /* informationViewController.swift */; };
 		8FABF03124D0A45A00C5AFD1 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FABF03024D0A45A00C5AFD1 /* mapViewController.swift */; };
+		8FB38B0124D33623004F9609 /* finalImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB38B0024D33623004F9609 /* finalImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		8FABF02C24D0A33E00C5AFD1 /* myMemoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myMemoriesViewController.swift; sourceTree = "<group>"; };
 		8FABF02E24D0A38A00C5AFD1 /* informationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informationViewController.swift; sourceTree = "<group>"; };
 		8FABF03024D0A45A00C5AFD1 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		8FB38B0024D33623004F9609 /* finalImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				8FABEFF724D088AB00C5AFD1 /* AppDelegate.swift */,
 				8FABEFF924D088AB00C5AFD1 /* SceneDelegate.swift */,
 				8FABEFFB24D088AB00C5AFD1 /* ViewController.swift */,
+				8FB38B0024D33623004F9609 /* finalImageViewController.swift */,
 				8FABF02A24D091D300C5AFD1 /* addImageViewController.swift */,
 				8FABF02C24D0A33E00C5AFD1 /* myMemoriesViewController.swift */,
 				8FABF02E24D0A38A00C5AFD1 /* informationViewController.swift */,
@@ -282,6 +285,7 @@
 				8FABF02F24D0A38A00C5AFD1 /* informationViewController.swift in Sources */,
 				8FABEFFA24D088AB00C5AFD1 /* SceneDelegate.swift in Sources */,
 				8FABF03124D0A45A00C5AFD1 /* mapViewController.swift in Sources */,
+				8FB38B0124D33623004F9609 /* finalImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
