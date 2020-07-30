@@ -11,24 +11,31 @@ import UIKit
 class informationViewController: UIViewController {
     @IBOutlet weak var symptomsOutlet: UIButton!
     @IBOutlet weak var resourcesOutlet: UIButton!
-
+    @IBOutlet weak var CDCButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        CDCButton.isHidden = true
     }
     
-
+    @IBAction func CDCLink(_ sender: Any) {
+        let CDCurl = URL (string: "https://www.cdc.gov/covid-data-tracker/index.html#cases")!
+        UIApplication.shared.open(CDCurl)
+    }
+    
     @IBAction func updatesButton(_ sender: Any) {
-        UIView.animate(withDuration: 0.75, delay: 0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 0.25, delay: 0, options: .curveLinear, animations: {
                self.symptomsOutlet.center.y += 150
            }, completion: nil)
-        UIView.animate(withDuration: 0.75, delay: 0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 0.25, delay: 0, options: .curveLinear, animations: {
             self.resourcesOutlet.center.y += 160
         }, completion: nil)
+        CDCButton.isHidden = false
     }
     
     @IBAction func symptomsButton(_ sender: Any) {
-        UIView.animate(withDuration: 0.75, delay: 0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 0.25, delay: 0, options: .curveLinear, animations: {
             self.resourcesOutlet.center.y += 160
         }, completion: nil)
         

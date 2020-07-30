@@ -121,11 +121,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbO-SX-Pf1">
-                                <rect key="frame" x="44" y="144" width="136" height="103"/>
+                                <rect key="frame" x="135" y="144" width="136" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="CDClogo"/>
                                 <connections>
-                                    <action selector="CDCLink:" destination="83y-Ph-VuV" eventType="touchUpInside" id="b0J-54-q0m"/>
+                                    <action selector="CDCLink:" destination="83y-Ph-VuV" eventType="touchUpInside" id="KQO-WQ-fR4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -134,6 +134,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="dv2-BO-N7m"/>
                     <connections>
+                        <outlet property="CDCButton" destination="dbO-SX-Pf1" id="je6-Ei-Z3T"/>
                         <outlet property="resourcesOutlet" destination="a33-J3-Zff" id="odx-GX-kCN"/>
                         <outlet property="symptomsOutlet" destination="6uu-rd-onn" id="rBj-Hg-910"/>
                     </connections>
