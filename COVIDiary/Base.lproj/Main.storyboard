@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -33,6 +33,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vK-Z5-Av4">
+                                <rect key="frame" x="27" y="755" width="49" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="backbutton"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="s1w-PZ-lva"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="JpB-aN-PLB"/>
@@ -127,14 +135,6 @@
                                     <action selector="resourcesButton:" destination="83y-Ph-VuV" eventType="touchUpInside" id="8c5-0Z-gml"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3I-HW-r35">
-                                <rect key="frame" x="19" y="778" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="&lt; Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="hDW-iQ-3ZE"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uu-rd-onn">
                                 <rect key="frame" x="13" y="151" width="381" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -165,6 +165,14 @@
                                 <state key="normal" title="Button" image="WebMDLogo"/>
                                 <connections>
                                     <action selector="webMDLink:" destination="83y-Ph-VuV" eventType="touchUpInside" id="nMg-RG-baS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3I-HW-r35">
+                                <rect key="frame" x="32" y="746" width="50" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt; Back" image="backbutton"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="hDW-iQ-3ZE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -600,6 +608,7 @@ Cg
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="HxL-8y-xNM"/>
+        <segue reference="hDW-iQ-3ZE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="CDClogo" width="220" height="166"/>
@@ -607,6 +616,7 @@ Cg
         <image name="IMG_2743" width="750" height="1624"/>
         <image name="Screen Shot 2020-07-29 at 10.37.39 AM" width="2802" height="1412"/>
         <image name="WebMDLogo" width="471" height="107"/>
+        <image name="backbutton" width="136" height="160"/>
         <image name="download-1" width="287" height="176"/>
         <image name="final image" width="3024" height="4032"/>
         <image name="map button background" width="132" height="120"/>
