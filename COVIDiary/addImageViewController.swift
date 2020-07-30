@@ -4,9 +4,7 @@
 //
 //  Created by Jayne BOTTARINI on 28/7/2020.
 //  Copyright © 2020 Jayne BOTTARINI. All rights reserved.
-//test
-// test number 2
-
+//test 3
 import UIKit
 
 class addImageViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
@@ -93,7 +91,7 @@ class addImageViewController: UIViewController, UINavigationControllerDelegate, 
         nameDateButton.isHidden = true
         addToMyMemories.isHidden = false
     }
-    //code change
+    
     
      
         /*
