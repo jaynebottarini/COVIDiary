@@ -350,7 +350,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eS-RQ-Jx5">
-                                <rect key="frame" x="68" y="604" width="31" height="28"/>
+                                <rect key="frame" x="68" y="612" width="87" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Date">
@@ -432,7 +432,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nC5-76-hbB">
-                                <rect key="frame" x="163" y="601" width="36" height="39"/>
+                                <rect key="frame" x="163" y="608" width="36" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -446,11 +446,12 @@
                                     </attributedString>
                                 </state>
                                 <connections>
+                                    <action selector="nameDate:" destination="B4s-yl-Wr4" eventType="touchUpInside" id="dTV-tx-x41"/>
                                     <action selector="nameLocation:" destination="B4s-yl-Wr4" eventType="touchUpInside" id="mak-uZ-HdM"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIZ-bX-rea">
-                                <rect key="frame" x="217" y="603" width="157" height="34"/>
+                                <rect key="frame" x="217" y="609" width="157" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -461,13 +462,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="B4o-q4-NnF"/>
                     <connections>
+                        <outlet property="changeDate" destination="gIZ-bX-rea" id="JOw-ys-EOg"/>
                         <outlet property="changeEvent" destination="z4O-V6-UQl" id="QYH-Sz-rAY"/>
                         <outlet property="changeFriends" destination="8i0-YG-DtW" id="QNo-gg-4lS"/>
                         <outlet property="changeLocation" destination="3nI-YM-2xv" id="B0Z-Yn-iTw"/>
+                        <outlet property="date" destination="1eS-RQ-Jx5" id="Wfk-y9-CN8"/>
                         <outlet property="eventTitle" destination="80H-oo-W3R" id="rw7-6M-uCc"/>
                         <outlet property="friends" destination="NL7-8c-IK9" id="PpD-uS-QS2"/>
                         <outlet property="imageView1" destination="3ol-qP-fkl" id="IZS-1m-fXi"/>
                         <outlet property="location" destination="tAi-kB-VO3" id="UcM-oO-xZW"/>
+                        <outlet property="nameDateButton" destination="nC5-76-hbB" id="u5i-W6-r9B"/>
                         <outlet property="nameEventButton" destination="Syw-jV-1rk" id="jeT-aq-6Af"/>
                         <outlet property="nameFriendsButton" destination="Ql7-3k-td1" id="RV3-Y8-Bog"/>
                         <outlet property="nameLocationButton" destination="1Xp-re-Hge" id="ipc-A6-pha"/>

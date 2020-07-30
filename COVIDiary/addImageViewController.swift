@@ -14,12 +14,18 @@ class addImageViewController: UIViewController, UINavigationControllerDelegate, 
     @IBOutlet weak var eventTitle: UILabel!
     @IBOutlet weak var friends: UILabel!
     @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var date: UILabel!
+    
     @IBOutlet weak var changeEvent: UITextField!
     @IBOutlet weak var changeFriends: UITextField!
     @IBOutlet weak var changeLocation: UITextField!
+    @IBOutlet weak var changeDate: UITextField!
+    
+    
     @IBOutlet weak var nameEventButton: UIButton!
     @IBOutlet weak var nameFriendsButton: UIButton!
     @IBOutlet weak var nameLocationButton: UIButton!
+    @IBOutlet weak var nameDateButton: UIButton!
     
     
     @IBOutlet weak var imageView1: UIImageView!
@@ -62,6 +68,7 @@ class addImageViewController: UIViewController, UINavigationControllerDelegate, 
         nameEventButton.isHidden = false
         nameFriendsButton.isHidden = false
         nameLocationButton.isHidden = false
+        nameDateButton.isHidden = false
     }
     @IBAction func nameEvent(_ sender: Any) {
         eventTitle.text = changeEvent.text
@@ -78,6 +85,12 @@ class addImageViewController: UIViewController, UINavigationControllerDelegate, 
         changeLocation.isHidden = true
         nameLocationButton.isHidden = true
     }
+    @IBAction func nameDate(_ sender: Any) {
+        date.text = changeDate.text
+        changeDate.isHidden = true
+        nameDateButton.isHidden = true
+    }
+    
     
      
         /*
