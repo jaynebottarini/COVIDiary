@@ -151,6 +151,22 @@
                                     <action selector="CDCLink:" destination="83y-Ph-VuV" eventType="touchUpInside" id="KQO-WQ-fR4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZu-aV-XXz">
+                                <rect key="frame" x="135" y="727" width="127" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="download-1"/>
+                                <connections>
+                                    <action selector="testingLink:" destination="83y-Ph-VuV" eventType="touchUpInside" id="Muv-7e-90H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ro6-Vi-35Y">
+                                <rect key="frame" x="93" y="457" width="221" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="WebMDLogo"/>
+                                <connections>
+                                    <action selector="webMDLink:" destination="83y-Ph-VuV" eventType="touchUpInside" id="nMg-RG-baS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="bg7-kw-qCq"/>
@@ -160,6 +176,8 @@
                         <outlet property="CDCButton" destination="dbO-SX-Pf1" id="je6-Ei-Z3T"/>
                         <outlet property="resourcesOutlet" destination="a33-J3-Zff" id="odx-GX-kCN"/>
                         <outlet property="symptomsOutlet" destination="6uu-rd-onn" id="rBj-Hg-910"/>
+                        <outlet property="testingButton" destination="WZu-aV-XXz" id="MDw-BN-PtZ"/>
+                        <outlet property="webMDButton" destination="ro6-Vi-35Y" id="sKO-Ih-bR0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tY-Fn-dBq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -426,6 +444,8 @@
         <image name="IMG_1234" width="5184" height="3456"/>
         <image name="IMG_2743" width="750" height="1624"/>
         <image name="Screen Shot 2020-07-29 at 10.37.39 AM" width="2802" height="1412"/>
+        <image name="WebMDLogo" width="471" height="107"/>
+        <image name="download-1" width="287" height="176"/>
         <image name="final image" width="3024" height="4032"/>
         <image name="map button background" width="132" height="120"/>
         <image name="my memories button" width="391" height="97"/>
