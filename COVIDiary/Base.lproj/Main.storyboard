@@ -191,8 +191,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygY-AK-Srt">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1446"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AvX-eW-V9b">
-                                        <rect key="frame" x="0.0" y="859" width="414" height="1446"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AvX-eW-V9b">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1446"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="final image" translatesAutoresizingMaskIntoConstraints="NO" id="fFc-PK-Ehq">
                                                 <rect key="frame" x="8" y="8" width="190" height="256"/>
@@ -207,10 +207,14 @@
                                                 <rect key="frame" x="12" y="472" width="200" height="264"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2743" translatesAutoresizingMaskIntoConstraints="NO" id="7sN-6F-w0P">
-                                                <rect key="frame" x="8" y="939" width="170" height="1624"/>
+                                                <rect key="frame" x="8" y="939" width="190" height="331"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Screen Shot 2020-07-29 at 10.37.39 AM" translatesAutoresizingMaskIntoConstraints="NO" id="ohK-pl-P7k">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2020-07-29 at 10.37.39 AM" translatesAutoresizingMaskIntoConstraints="NO" id="ohK-pl-P7k">
                                                 <rect key="frame" x="127" y="1278" width="279" height="144"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="144" id="0mD-ml-EnC"/>
+                                                    <constraint firstAttribute="width" constant="279" id="P82-Nk-ter"/>
+                                                </constraints>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -222,17 +226,22 @@
                                             <constraint firstItem="7sN-6F-w0P" firstAttribute="top" secondItem="AvX-eW-V9b" secondAttribute="top" constant="939" id="CeS-XE-IF2"/>
                                             <constraint firstItem="fFc-PK-Ehq" firstAttribute="top" secondItem="AvX-eW-V9b" secondAttribute="top" constant="8" id="DEe-HG-gsq"/>
                                             <constraint firstAttribute="trailing" secondItem="yli-A0-kWk" secondAttribute="trailing" constant="8" id="ED5-w6-QML"/>
+                                            <constraint firstItem="ohK-pl-P7k" firstAttribute="leading" secondItem="AvX-eW-V9b" secondAttribute="leading" constant="127" id="G06-pF-n2r"/>
                                             <constraint firstItem="va8-Ko-nLN" firstAttribute="top" secondItem="Qox-AJ-ubW" secondAttribute="bottom" constant="8" id="Gpt-Ed-GXt"/>
-                                            <constraint firstAttribute="trailing" secondItem="7sN-6F-w0P" secondAttribute="trailing" constant="236" id="KXP-zI-aAu"/>
                                             <constraint firstItem="7sN-6F-w0P" firstAttribute="top" secondItem="va8-Ko-nLN" secondAttribute="bottom" constant="203" id="PE5-Le-qrk"/>
                                             <constraint firstItem="yli-A0-kWk" firstAttribute="top" secondItem="Qox-AJ-ubW" secondAttribute="bottom" constant="280" id="PHs-4s-yKD"/>
                                             <constraint firstItem="7sN-6F-w0P" firstAttribute="top" secondItem="yli-A0-kWk" secondAttribute="bottom" constant="8" id="Pam-GY-5eY"/>
                                             <constraint firstItem="Qox-AJ-ubW" firstAttribute="top" secondItem="fFc-PK-Ehq" secondAttribute="bottom" constant="8" id="SXl-Yg-lp1"/>
                                             <constraint firstItem="Qox-AJ-ubW" firstAttribute="top" secondItem="AvX-eW-V9b" secondAttribute="top" constant="272" id="TPY-QT-LpT"/>
                                             <constraint firstItem="va8-Ko-nLN" firstAttribute="top" secondItem="AvX-eW-V9b" secondAttribute="top" constant="472" id="axB-xq-pBJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="7sN-6F-w0P" secondAttribute="trailing" constant="216" id="b3J-5X-sfD"/>
+                                            <constraint firstItem="ohK-pl-P7k" firstAttribute="top" secondItem="7sN-6F-w0P" secondAttribute="bottom" constant="8" id="cuQ-WU-D1Q"/>
                                             <constraint firstItem="ohK-pl-P7k" firstAttribute="top" secondItem="AvX-eW-V9b" secondAttribute="top" constant="1278" id="dSj-nb-WKe"/>
                                             <constraint firstItem="Qox-AJ-ubW" firstAttribute="leading" secondItem="AvX-eW-V9b" secondAttribute="leading" constant="139" id="eyX-90-fO3"/>
                                             <constraint firstItem="7sN-6F-w0P" firstAttribute="leading" secondItem="AvX-eW-V9b" secondAttribute="leading" constant="8" id="fBI-mf-pVm"/>
+                                            <constraint firstAttribute="trailing" secondItem="ohK-pl-P7k" secondAttribute="trailing" constant="8" id="fOC-qR-Vis"/>
+                                            <constraint firstItem="ohK-pl-P7k" firstAttribute="trailing" secondItem="yli-A0-kWk" secondAttribute="trailing" id="gJt-LJ-eY3"/>
+                                            <constraint firstItem="ohK-pl-P7k" firstAttribute="top" secondItem="yli-A0-kWk" secondAttribute="bottom" constant="347" id="hEl-fo-zXx"/>
                                             <constraint firstAttribute="trailing" secondItem="va8-Ko-nLN" secondAttribute="trailing" constant="202" id="k1b-Mh-yW0"/>
                                             <constraint firstItem="va8-Ko-nLN" firstAttribute="top" secondItem="fFc-PK-Ehq" secondAttribute="bottom" constant="208" id="oRO-n8-G3G"/>
                                             <constraint firstAttribute="trailing" secondItem="fFc-PK-Ehq" secondAttribute="trailing" constant="216" id="s2O-f5-wMq"/>
