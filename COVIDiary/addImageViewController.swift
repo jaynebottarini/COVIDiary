@@ -93,7 +93,7 @@ class addImageViewController: UIViewController, UINavigationControllerDelegate, 
         nameDateButton.isHidden = true
         addToMyMemories.isHidden = false
     }
-    
+    //code change
     
      
         /*
