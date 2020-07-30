@@ -6,9 +6,12 @@
 //  Copyright © 2020 Jayne BOTTARINI. All rights reserved.
 //
 
+
 import UIKit
 
 class informationViewController: UIViewController {
+    
+    // testing
     @IBOutlet weak var symptomsOutlet: UIButton!
     @IBOutlet weak var resourcesOutlet: UIButton!
     @IBOutlet weak var CDCButton: UIButton!

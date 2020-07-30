@@ -12,6 +12,10 @@ import CoreLocation
 
 class mapViewController: UIViewController {
 
+    // test comment map
+    // if this comment doesn't work im going to lose my mind
+    // ive commented like five times seriously
+    
     @IBOutlet weak var map: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
